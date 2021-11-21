@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-        setSupportActionBar(binding.appBarMain.toolbar); //binding의 appbar의 toolbar를 서포트엑터로 설정
+        //setSupportActionBar(binding.appBarMain.toolbar); //binding의 appbar의 toolbar를 서포트엑터로 설정
 
         DrawerLayout drawer = binding.drawerLayout;
         NavigationView navigationView = binding.navView; //네비게이션 메뉴바 연결
@@ -41,6 +41,8 @@ public class MainActivity extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
+
+
     }
 
 
