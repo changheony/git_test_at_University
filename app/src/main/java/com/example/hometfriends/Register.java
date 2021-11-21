@@ -42,7 +42,7 @@ public class Register extends AppCompatActivity {
 
         connectId();  //xml의 id와 위에 선언한 EditText or Button과 연결
 
-        //이메일 중복체크 버튼 클릭했을 때 db에서 데이터 받아오기
+        //이메일 중복체크 버튼을 클릭했을 때 db에서 데이터 받아오기
 //        mBtnEmail.setOnClickListener(new View.OnClickListener() {
 //            @Override
 //            public void onClick(View view) {
